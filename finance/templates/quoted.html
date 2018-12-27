@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <font size="18"><p>A share of <b>{{ quote["symbol"] }}</b> costs <b>{{ quote_price }}</b> usd</p></font>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Deposit
+{% endblock %}
+
+{% block main %}
+    <form action="/deposit" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="amount" placeholder="Amount" type="text"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Deposit</button>
+    </form>
+    <table class="table table-striped" style="width:100%">
+        <tr>
+            <td>Only rounded dollars are accepted!</td>
+        </tr>
+    </table>
+{% endblock %}
